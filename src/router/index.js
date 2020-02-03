@@ -1,10 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import GroupList from '../components/GroupList';
 
 Vue.use(VueRouter)
 
-const routes = []
+const routes = [
+  {
+    path: '/',
+    component: GroupList
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',
